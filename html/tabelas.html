@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela</title>
+  </head>
+
+  <style>
+    body {
+      font-size: 30px;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    }
+
+    table {
+      /* border: 1px solid gray; */
+      -webkit-box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.34);
+      box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.24);
+    }
+    th {
+      background-color: black;
+      color: white;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f1f1f1;
+    }
+
+    tbody tr:hover {
+      background-color: #b4b4b4;
+      cursor: pointer;
+    }
+
+    tfoot {
+      background-color: lightgray;
+    }
+  </style>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <table
+          summary="Tabela se refere a idade da turma HTML da DIO.me"
+          width="400"
+          align="center"
+          cellspacing="0"
+          cellpadding="5"
+        >
+          <caption style="font-size: 25px">
+            Tabela de idade dos alunos Dio.me
+          </caption>
+          <thead>
+            <tr>
+              <th colspan="2">Minha Tabela</th>
+            </tr>
+            <tr>
+              <th title="Nome Completo">Nome</th>
+              <th>Idade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Luis Fernando</td>
+              <td>44</td>
+            </tr>
+            <tr>
+              <td>Aline</td>
+              <td>44</td>
+            </tr>
+            <tr>
+              <td>Luis Felipe</td>
+              <td>19</td>
+            </tr>
+            <tr>
+              <td>Enzo</td>
+              <td>13</td>
+            </tr>
+            <tr>
+              <td id="lala">Laura</td>
+              <td>10</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Total</td>
+              <td>5</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
